@@ -1,0 +1,19 @@
+OS Lab 2
+David Tyler
+
+This lab is abour mutex and semaphores. Muxtex are used to protect a critical section for access by one thread only. Semaphores allow access bu multiple threads so multiple resources can be taken advantage of.
+
+pthread_create()
+pthread_join()
+
+My source code file is lab2.c
+
+Build the project by typing:
+make
+
+Also, you can type:
+make debug
+for additional output
+
+Then, run the project using:
+./lab2.exe 200
