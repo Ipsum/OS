@@ -1,0 +1,12 @@
+OS Lab 3
+David Tyler
+
+This lab is about memory management. Memory management is critical to making sure that memory is properly guarded against overlap from other programs as well as to make sure that excessive fragmentation does not occur. Compaction is used in this program to greatly simplify allocating of memory. malloc() is used to initially create a block of memory.
+
+My source code file is main.c
+
+Build the project by typing:
+make
+
+Then, run the project using:
+./lab3.exe [number of threads]

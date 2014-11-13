@@ -1,0 +1,66 @@
+# ./lab3.exe 5                  
+Creating thread: 0
+Creating thread: 2
+Creating thread: 1
+Creating thread: 4
+Creating thread: 3
+I am thread 0 and I am waking up
+Size requested: 171
+====BEGIN MALLOC====
+malloc size 171
+====END MALLOC====
+Current Memory: |Thread 0 @ -1995214849 (171 bytes) |
+TOTAL SIZE: 171
+Location: -1995214849
+I am thread 0 and I am going to sleep
+I am thread 2 and I am waking up
+Size requested: 237
+====BEGIN MALLOC====
+malloc size 237
+====END MALLOC====
+Current Memory: |Thread 0 @ -1995214849 (171 bytes) |Thread 2 @ -1995214678 (237 bytes) |
+TOTAL SIZE: 408
+Location: -1995214678
+I am thread 2 and I am going to sleep
+I am thread 1 and I am waking up
+Size requested: 314
+====BEGIN MALLOC====
+malloc size 314
+====END MALLOC====
+Current Memory: |Thread 0 @ -1995214849 (171 bytes) |Thread 2 @ -1995214678 (237 bytes) |Thread 1 @ -1995214441 (314 bytes) |
+TOTAL SIZE: 722
+Location: -1995214441
+I am thread 1 and I am going to sleep
+I am thread 4 and I am waking up
+Size requested: 676
+====BEGIN MALLOC====
+malloc size 676
+====END MALLOC====
+Current Memory: |Thread 0 @ -1995214849 (171 bytes) |Thread 2 @ -1995214678 (237 bytes) |Thread 1 @ -1995214441 (314 bytes) |Thread 4 @ -1995214127 (676 bytes) |
+TOTAL SIZE: 1398
+Location: -1995214127
+I am thread 4 and I am going to sleep
+I am thread 3 and I am waking up
+Size requested: 92
+====BEGIN MALLOC====
+malloc size 92
+====END MALLOC====
+Current Memory: |Thread 0 @ -1995214849 (171 bytes) |Thread 2 @ -1995214678 (237 bytes) |Thread 1 @ -1995214441 (314 bytes) |Thread 4 @ -1995214127 (676 bytes) |Thread 3 @ -1995213451 (92 bytes) |
+TOTAL SIZE: 1490
+Location: -1995213451
+I am thread 3 and I am going to sleep
+I am thread 1 and I am waking up
+****BEGIN FREE****
+Freeing thread 1's memory
+****END FREE****
+Current Memory: |Thread 0 @ -1995214849 (171 bytes) |Thread 2 @ -1995214678 (237 bytes) |Thread 4 @ -1995214441 (676 bytes) |Thread 3 @ -1995213765 (92 bytes) |
+TOTAL SIZE: 1176
+Size requested: 797
+====BEGIN MALLOC====
+malloc size 797
+====END MALLOC====
+Current Memory: |Thread 0 @ -1995214849 (171 bytes) |Thread 2 @ -1995214678 (237 bytes) |Thread 4 @ -1995214441 (676 bytes) |Thread 3 @ -1995213765 (92 bytes) |Thread 1 @ -1995213673 (797 bytes) |
+TOTAL SIZE: 1973
+Location: -1995213673
+I am thread 1 and I am going to sleep
+
